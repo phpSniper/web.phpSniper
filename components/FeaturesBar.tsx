@@ -37,7 +37,7 @@ const current = data?.title;
        <h1 className='font-bold px-5'>Getting started</h1>
        {showDetails && <XMarkIcon className='w-8 cursor-pointer hover:scale-110 transition' onClick={() => setShowDetails(false)} />}
        </div>
-        <div className={`capitalize cursor-pointer w-full rounded-lg px-5 py-2 hover:bg-gray-800 ${current === "getStarted" && "text-blue-500"}`} onClick={() => handleChange({"title": "getStarted"})}>installation</div>
+        <div className={`capitalize cursor-pointer w-full rounded-lg px-5 py-2 hover:bg-gray-200 dark:hover:bg-gray-800 ${current === "getStarted" && "text-blue-500"}`} onClick={() => handleChange({"title": "getStarted"})}>installation</div>
         {
             functions?.map((each, index) => <div key={index} className={`capitalize cursor-pointer  w-full rounded-lg px-5 py-2 hover:bg-gray-200 dark:hover:bg-gray-800 ${current === each?.title && "text-blue-500"}`} onClick={() => handleChange(each)}>{each?.title}</div>)
         }
