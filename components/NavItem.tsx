@@ -10,7 +10,7 @@ data: {
 
 const NavItem = ({data, onClick}: Props) => {
   return (
-    <Link href={data?.url} className='capitalize px-3 py-2 rounded-xl hover:bg-gray-200 hover:dark:bg-gray-800' onClick={() => onClick(false)}>{data?.name}</Link>
+    <Link href={data?.url} target={`${data?.name === "Github" && "_blank"}`} rel='links ' className='capitalize px-3 py-2 rounded-xl hover:bg-gray-200 hover:dark:bg-gray-800' onClick={() => onClick(false)}>{data?.name}</Link>
   )
 }
 
