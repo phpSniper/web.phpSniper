@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="md:max-w-5xl lg:max-w-7xl mx-auto py-2 flex w-full justify-between  space-x-20 lg:space-x-40  items-center">
         <Image src="/phpSniper.png" priority width={100} height={100} className='w-16 relative' alt='logo'  />
 
-        <div className='relative overflow-visible md:w-full flex flex-col md:flex-row w-fulljustify-between text-gray-800 dark:text-gray-200'>
+        <div className='relative overflow-visible md:w-full  flex flex-col md:flex-row w-full justify-end text-gray-800 dark:text-gray-200'>
           <Bars3Icon className='w-12 p-2 md:hidden relative hover:bg-gray-200 hover:dark:bg-gray-800 rounded-xl cursor-pointer' onClick={() => setShow(!show)}/>
           
           <div className="hidden md:flex justify-between max-w-3xl w-full z-10 duration-500 " >
