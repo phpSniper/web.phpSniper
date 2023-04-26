@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className='relative overflow-visible md:w-full flex flex-col md:flex-row w-fulljustify-between text-gray-800 dark:text-gray-200'>
           <Bars3Icon className='w-12 p-2 md:hidden relative hover:bg-gray-200 hover:dark:bg-gray-800 rounded-xl cursor-pointer' onClick={() => setShow(!show)}/>
           
-          <div className="hidden md:flex justify-between w-full z-10 duration-500 " >
+          <div className="hidden md:flex justify-between max-w-3xl w-full z-10 duration-500 " >
             {navigations?.map((nav, index) => (
               <NavItem data={nav} key={index} onClick={setShow} />
             ))}
